@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5D7FD"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Courts_Task">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/black"
+            android:text="Data is available for following court(s):"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#FFED6D"
+            android:elevation="10dp"
+            android:id="@+id/card"
+            android:background="@color/white"
+            app:cardCornerRadius="14dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_"
+                android:alpha="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginVertical="10dp"
+                            android:id="@+id/image_court"
+                            android:layout_width="145dp"
+                            android:scaleType="centerCrop"
+                            android:elevation="5dp"
+                            android:src="@drawable/ic_baseline_person_24"
+                            android:layout_height="145dp"/>
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginVertical="5dp"
+                            android:id="@+id/playerName"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/stroke_color"
+                            android:fontFamily="@font/r"
+                            android:textStyle="bold"
+                            android:text="Penn's Tennis Court"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#FFED6D"
+            android:elevation="10dp"
+            android:id="@+id/card1"
+            android:background="@color/white"
+            app:cardCornerRadius="14dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_"
+                android:alpha="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginVertical="10dp"
+                            android:id="@+id/image_court1"
+                            android:layout_width="145dp"
+                            android:scaleType="centerCrop"
+                            android:elevation="5dp"
+                            android:src="@drawable/ic_baseline_person_24"
+                            android:layout_height="145dp"/>
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginVertical="5dp"
+                            android:id="@+id/playerName1"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/stroke_color"
+                            android:fontFamily="@font/r"
+                            android:textStyle="bold"
+                            android:text="Harvard's Tennis Court"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#FFED6D"
+            android:elevation="10dp"
+            android:id="@+id/card2"
+            android:background="@color/white"
+            app:cardCornerRadius="14dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_"
+                android:alpha="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginVertical="10dp"
+                            android:id="@+id/image_court2"
+                            android:layout_width="145dp"
+                            android:elevation="5dp"
+                            android:src="@drawable/ic_baseline_person_24"
+                            android:layout_height="145dp"/>
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginVertical="5dp"
+                            android:id="@+id/playerName2"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/stroke_color"
+                            android:fontFamily="@font/r"
+                            android:textStyle="bold"
+                            android:text="Dartmouth's Tennis Court"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

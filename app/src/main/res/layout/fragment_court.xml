@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_"
+    tools:context=".CourtFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/stroke_color"
+                android:text="Penn Tennis Court"/>
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="15dp"
+                    android:background="@drawable/goodrad">
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_btn"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Image 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/goodrad">
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_btn"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Image 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/goodrad">
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_btn"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Image 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/goodrad">
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/edit_text_btn"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/people_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/mtrl_textinput_default_box_stroke_color"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="20dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/animation_view_no_spaces"
+                app:lottie_rawRes="@raw/nospaces"
+                app:lottie_autoPlay="true"
+                android:visibility="gone"
+                app:lottie_loop="true"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="20dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:id="@+id/animation_view_spaces"
+                app:lottie_rawRes="@raw/spaces"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

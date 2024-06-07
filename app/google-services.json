@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142383803626",
+    "project_id": "tennis-4e01c",
+    "storage_bucket": "tennis-4e01c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142383803626:android:aeaa1c09fe23c056277b93",
+        "android_client_info": {
+          "package_name": "com.kanad.somethingnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142383803626-0h5tv0sdpfknjreiifks3b1m5peq23d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpy43aMKJu1iggtySZYNwu3a6ZcrvOR5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142383803626-0h5tv0sdpfknjreiifks3b1m5peq23d7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

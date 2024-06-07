@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_"
+    android:layout_height="match_parent"
+    tools:context=".ProfileShowActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_player"
+                    android:background="@drawable/edit_btn_2"
+                    android:layout_width="200dp"
+                    android:src="@drawable/user"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:id="@+id/doctor_name_on_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Player Name"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:background="@drawable/edit_text_btn1"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_margin="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Name: "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/fullname_player"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Jhon Doe"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:paddingVertical="15dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_btn1"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="7dp"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Age: "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/age_player"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Age"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingVertical="15dp"
+                        android:background="@drawable/edit_text_btn1"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="7dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textStyle="bold"
+                            android:text="Zip Code: "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/zip_player"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Specilization"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_btn1"
+                        android:layout_marginHorizontal="15dp"
+                        android:paddingVertical="15dp"
+                        android:layout_marginVertical="7dp"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Skill Level: "
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/skill_player"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Institute"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingVertical="15dp"
+                        android:background="@drawable/edit_text_btn1"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="7dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Gender: "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/gender_player"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="expirience"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="7dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/linear_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/request_sender"
+                                android:layout_width="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginVertical="10dp"
+                                android:layout_height="wrap_content"
+                                android:text="Play Together"/>
+                            <Button
+                                android:id="@+id/request_sent"
+                                android:layout_width="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:backgroundTint="#FFC800"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:text="Request Sent"/>
+                            <Button
+                                android:id="@+id/request_accepted"
+                                android:layout_width="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:backgroundTint="#4CAF50"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:text="MESSAGE"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

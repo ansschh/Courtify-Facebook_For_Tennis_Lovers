@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePhotoActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:background="#D4E1EA"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Tennify"
+                android:textColor="@color/stroke_color"
+                android:fontFamily="@font/firasansextrabold"/>
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_gravity="start"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/logo"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:id="@+id/uploadingImageButton"
+                android:src="@drawable/upload"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center_horizontal"
+                android:text="Please Upload a Profile Picture"
+                android:textColor="#000"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/doneUploading"
+                android:drawableRight="@drawable/check"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/tick"
+                android:paddingVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center_horizontal"
+                android:text="Image Uploaded Successfully"
+                android:textColor="#4CAF50"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/NotdoneUploading"
+                android:drawableRight="@drawable/close"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:background="@drawable/redcross"
+                android:paddingVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center_horizontal"
+                android:text="Failed to Upload Image"
+                android:textColor="#FF0000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom">
+                <TextView
+                    android:background="@color/black"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@+id/nxt3"
+                    android:text="FINISH"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

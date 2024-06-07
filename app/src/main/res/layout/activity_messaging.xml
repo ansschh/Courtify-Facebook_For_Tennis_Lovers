@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MessagingActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/message_rec_view"
+        android:layout_above="@id/bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edt4"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/sending_message"
+            android:hint="Type a Message..."
+            android:fontFamily="@font/r"
+            android:paddingLeft="15dp"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textColorHint="@color/stroke_color"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:rotation="-270"
+            android:layout_height="40dp"
+            android:id="@+id/send_button"
+            android:background="@drawable/background_rotated"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

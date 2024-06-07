@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="stroke_color">#09153f</color>
+    <color name="signup_color">#58A6E1</color>
+    <color name="signup_color1">#005CA1</color>
+    <color name="purple_500">#58A6E1</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#306DB6</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="bluepie">#007afe</color>
+    <color name="greenpie">#08a045</color>
+    <color name="redpie">#f6404F</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white">#FFF</color>
+    <color name="yellow">#FFE31F</color>
+    <color name="orange">#FF7100</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#09153f</color>
+</resources>
